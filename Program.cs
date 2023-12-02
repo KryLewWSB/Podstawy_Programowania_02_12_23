@@ -1,15 +1,5 @@
-﻿using System.Collections.Generic;
-namespace ConsoleApp1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+﻿
+int liczba = 5; //Tutaj została stworzona zmienna typu int i została do niej przypisana wartość
 
-            const int maxLiczbaProb = 3;
-            Console.WriteLine(maxLiczbaProb);
-        
+Console.WriteLine(liczba);
 
-        }
-    }
-}

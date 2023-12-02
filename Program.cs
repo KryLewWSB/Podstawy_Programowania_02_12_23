@@ -1,12 +1,18 @@
-﻿
-int liczba = 5; //wartości liczby całkowite
-bool zmiennaLogiczna = true; //wartości logiczne prawda / fałsz
-double zmiennaDouble = 5.333; //wartość zmiennopozycyjna - liczby z przecinkiem
+﻿byte liczba = 255;
+Console.WriteLine(liczba);
 
-string ciagZnakow = "Test"; //ciąg znaków / łancuch znaków
-string ciagZnakow2 = "5";
-char znak = 'T'; //Pojedynczy znak
+int liczbaTest; //Deklaracja zmiennej
+liczbaTest = 4; //Inicjalizacja (przypisanie) wartości do zmiennej.
+Console.WriteLine(liczbaTest);
 
-Console.WriteLine(ciagZnakow);
-Console.WriteLine(ciagZnakow2);
-Console.WriteLine(znak);
+int liczba1 = 5,
+    liczba2 = 2;//deklaracja i incjalizacja dwóch zmiennych typu int
+
+Console.WriteLine(liczba1 + liczba2); // + jako operator arytmetyczny 5 + 2 == 7
+
+Console.WriteLine("Wynik dodawania: " + liczba1 + liczba2);// + jako operacja konkatenacji (połączenie dwóch łańcuchów znaków)
+
+Console.WriteLine("Wynik dodawania: " + 5 + 2);//+ jako Konkatenacja
+Console.WriteLine("Wynik dodawania: " + (5 + 2));//+ jako operacja arytmetyczna
+
+Console.WriteLine("Ala ma " + "kota.");//+ jako Konkatenacja

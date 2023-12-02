@@ -1,7 +1,3 @@
-﻿
-Console.WriteLine("4 == 5 " + (4 == 5));
-Console.WriteLine("4 == 4 " + (4 == 4));
-Console.WriteLine(4 != 5);
-Console.WriteLine(4 != 4);
-Console.WriteLine(4 <= 4);
-Console.WriteLine(4 < 4);
+﻿int liczba = 3;
+//operator warunkowy:
+Console.WriteLine( liczba % 2 == 0 ? $"Liczba {liczba} jest parzysta!" : $"Liczba {liczba} nie jest parzysta!");

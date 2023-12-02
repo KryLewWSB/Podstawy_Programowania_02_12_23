@@ -1,7 +1,10 @@
-﻿int x = 2;
-Console.WriteLine(x);//wypisze 2
-x = 3;
-Console.WriteLine(x);//wypisze 3
+﻿string name = "John";
+int age = 30;
+//Pierwszy sposób:
+string message = $"Hello, my name is {name} and I am {age} years old.";
+Console.WriteLine(message);
+//Drugi sposób:
+string message2 = "Hello, my name is " + name + " and I am " + age + " years old.";
+Console.WriteLine(message2);
 
-const int i = 5;//const to stała, której nie możemy ponownie zainicjalizować inną wartością.
-//i = 5; błąd!
+Console.WriteLine($"Test: {2 + 4}" );

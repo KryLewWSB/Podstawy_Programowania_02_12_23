@@ -1,14 +1,20 @@
-﻿/*Console.WriteLine("Proszę o podanie liczby: [zatwierdź enterem]");
-int liczba = Convert.ToInt32( Console.ReadLine() );*/
+﻿/*
+Console.WriteLine("Proszę o podanie liczby: [zatwierdź enterem]");
+int liczba = Convert.ToInt32( Console.ReadLine() );
 
+if ( liczba % 2 == 0 && liczba != 0 )
+{
+    Console.WriteLine("Liczba " + liczba + " jest podzielna przez 2!");
+}
+*/
 
-int liczba1, liczba2, liczba3 = 0; //deklaracja 3 zmiennych typu int
-liczba1 = 5; //inicjalizacja (przypisanie) wartości do zmiennej.
-liczba2 = 25; //inicjalizacja (przypisanie) wartości do zmiennej.
+Console.WriteLine(2 == 2 || 3 < 4); // true ||  true    wypisze finalnie: True
+Console.WriteLine(2 == 2 || 3 > 4); // true ||  false    wypisze finalnie: True
+Console.WriteLine(2 != 2 || 3 < 4); // true ||  false    wypisze finalnie: True
+Console.WriteLine(2 != 2 || 3 > 4); // false ||  false    wypisze finalnie: False
 
-int liczba4 = 55;//deklaracja i inicjalizacja zmiennej typu int
+bool herbata = true;
+bool kawa = false;
 
-Console.WriteLine("Zawartość zmiennej liczba1: " + liczba1);
-Console.WriteLine("Zawartość zmiennej liczba2: " + liczba2);
-Console.WriteLine("Zawartość zmiennej liczba3: " + liczba3);
-Console.WriteLine("Zawartość zmiennej liczba4: " + liczba4);
+Console.WriteLine(herbata || kawa);//Idź do sklepu i kup herbatę lub kawę True
+

@@ -1,6 +1,10 @@
-﻿/*Zadanie 1.3. Napisz program, który pobiera od użytkownika liczbę a następnie wykonuje potęgowanie i pierwiastkowanie. W zadaniu należy wykorzystać Math.pow() i Math.sqrt(). Lub ^.*/
-Console.WriteLine("Proszę o podanie liczby: [zatwierdź enterem]");
-int liczba = Convert.ToInt16(Console.ReadLine());
+﻿/*Zadanie 1.6. Napisz prosty konwerter godzin na minuty i odwrotnie. Pobierz liczbę godzin od użytkownika, przelicz
+ *je na minuty i wypisz. Następnie pobierz od użytkownika informację o liczbie minut i zamień je na godziny i wypisz.*/
+Console.WriteLine("Proszę o podanie liczby minut: [zatwierdź enterem]");
+int liczbaMinut = Convert.ToInt16(Console.ReadLine());
 
-Console.WriteLine($"Wynik potęgowania: {Math.Pow(liczba, 2)}");//Operacja 2 do potęgi 2
-Console.WriteLine($"Wynik pierwiastkowania: {Math.Sqrt(liczba)}");//pierewiastkowanie
+Console.WriteLine("Proszę o podanie liczby godziny: [zatwierdź enterem]");
+int liczbaGodzin = Convert.ToInt16(Console.ReadLine());
+
+Console.WriteLine($"Podałeś {liczbaMinut} minut. Jest to tyle godzin: {liczbaMinut / 60}");
+Console.WriteLine($"Podałeś {liczbaGodzin} godzin. Jest to tyle minut: {liczbaGodzin * 60}");

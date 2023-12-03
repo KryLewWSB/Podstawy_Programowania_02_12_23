@@ -1,30 +1,17 @@
-﻿
-Console.WriteLine("Proszę liczbę: [zatwierdź enterem]");
-int liczba = Convert.ToInt32( Console.ReadLine() );
+﻿//Zadanie 1.1. Napisz program, który przyjmie od użytkownika w konsoli 2 wartości typu String i wyświetli je w konsoli użytkownikowi w ten sposób:
+//Przyjmowanie pierwszej wartości string od użytkowenika z konsoli:
+Console.WriteLine("Proszę o podanie swojego imienia: [zatwierdź enterem]");
+string imie = Console.ReadLine();
 
+//Przyjmowanie drugiego wartości string od użytkowenika z konsoli:
+Console.WriteLine("Proszę o podanie swojego nazwisko: [zatwierdź enterem]");
+string nazwisko = Console.ReadLine();
 
-if (liczba > 1)
-{
-    Console.WriteLine("liczba > 1");
-} 
+//Wyświetlanie przyjętych wartości:
+Console.WriteLine("Cześć!\nTwoje imię to: " + imie + "\nA nazwisko to: " + nazwisko);//1 sposób
+Console.WriteLine($"Cześć!\nTwoje imię to: {imie}\nA nazwisko to: {nazwisko}");
 
-if (liczba > 2)
-{
-    Console.WriteLine("liczba > 2");
-} 
-
-if (liczba > 3)
-{
-    Console.WriteLine("liczba > 3");
-} 
-
-
-if (liczba > 4)
-{
-    Console.WriteLine("liczba > 4");
-}
-else
-{
-    Console.WriteLine("Inna liczba");
-}
-
+//3 sposób
+/*Console.WriteLine("Cześć!");
+Console.WriteLine("Twoje imię to: " + imie);
+Console.WriteLine("A nazwisko to: " + nazwisko);*/

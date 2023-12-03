@@ -1,9 +1,11 @@
-﻿int liczba = 5;
-int liczba2 = 6;
+﻿Console.WriteLine("Proszę o podanie liczby: [zatwierdź enterem]");
+int liczba = Convert.ToInt32( Console.ReadLine() );
 
-Console.WriteLine( liczba == liczba2);// Zwraca albo true albo false
-Console.WriteLine( liczba != liczba2);// Zwraca albo true albo false
-Console.WriteLine( liczba <= liczba2);// Zwraca albo true albo false
-Console.WriteLine( liczba >= liczba2);// Zwraca albo true albo false
-Console.WriteLine( liczba < liczba2);// Zwraca albo true albo false
-Console.WriteLine( liczba > liczba2);// Zwraca albo true albo false
+
+if (liczba > 0) {
+    Console.WriteLine("Liczba jest dodatnia.");
+}else if (liczba < 0) {
+    Console.WriteLine("Liczba jest ujemna.");
+}else{
+    Console.WriteLine("Liczba wynosi zero.");
+}

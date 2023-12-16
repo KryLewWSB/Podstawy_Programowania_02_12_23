@@ -1,16 +1,17 @@
-﻿/* 7. Napisz metodę rekurencyjną w C#,
- która przyjmuje liczbę 10 od użytkownika i oblicza sumę liczb od 1 do tej liczby.*/
+﻿/* 8. Napisz program, który tworzy listę jednokierunkową liczb całkowitych,
+ dodaje kilka elementów na jej koniec, a następnie wyświetla zawartość listy.*/
 
- Console.WriteLine( Suma(10) );
- 
-static int Suma(int n)
+LinkedList<int> linkedList = new LinkedList<int>();
+
+// Dodawanie elementów na koniec listy
+linkedList.AddLast(10);
+linkedList.AddLast(20);
+linkedList.AddLast(30);
+linkedList.AddLast(40);
+
+// Wyświetlanie zawartości listy
+foreach (var item in linkedList)
 {
-    if (n == 0)
-    {
-        return 0;
-    }
-    else
-    {
-        return n + Suma(n - 1);// przekazujemy 10:  10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 wynik: 55
-    }
+    Console.WriteLine(item);
 }
+

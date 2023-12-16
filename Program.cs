@@ -1,11 +1,11 @@
-﻿/* Przykład metody */
+﻿/* Przykład metody podziel */
 
-Console.WriteLine( Dodaj(2, 2) );
-Console.WriteLine( Dodaj(3, 5) );
-Console.WriteLine( Dodaj(6, 1) );
+Console.WriteLine( Podziel(2, 2) );//wynik 1
+Console.WriteLine( Podziel(2, 8) );//wynik 0,25
+Console.WriteLine( Podziel(b:2, a:8) );//wynik 4
+Console.WriteLine( Podziel(8, 2) );//wynik 4
 
-
-static int Dodaj(int a, int b)
+static double Podziel(double a, double b)
 {
-    return a + b;
+    return Convert.ToDouble(a / b);
 }

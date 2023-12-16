@@ -1,6 +1,10 @@
-﻿Console.WriteLine(Powitanie("Anna")); 
-Console.WriteLine(Powitanie("Tomasz")); 
-Console.WriteLine(Powitanie("Anita")); 
+﻿String[] tablicaImion = new string[] { "Anna", "Tomasz", "Anita", "Adam", "Paweł", "Piotr"};
+
+foreach (String imie in tablicaImion)
+{
+    Console.WriteLine( Powitanie(imie) ); 
+}
+
 
 static string Powitanie(string imie)
 {

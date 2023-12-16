@@ -1,11 +1,10 @@
-﻿/* Przykład metody podziel */
+﻿/* 6. Napisz  metodę w c# która przyjmyje dwie wartości (parametry, atrybuty)
+typu float i zwraca wynik  mnożenia tych dwóch liczb (zwraca typ float). */
 
-Console.WriteLine( Podziel(2, 2) );//wynik 1
-Console.WriteLine( Podziel(2, 8) );//wynik 0,25
-Console.WriteLine( Podziel(b:2, a:8) );//wynik 4
-Console.WriteLine( Podziel(8, 2) );//wynik 4
+Console.WriteLine( Pomnoz(2, 3) );
 
-static double Podziel(double a, double b)
+
+static float Pomnoz(float a, float b)
 {
-    return Convert.ToDouble(a / b);
+    return a * b;
 }

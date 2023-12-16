@@ -1,10 +1,8 @@
-﻿/* 6. Napisz  metodę w c# która przyjmyje dwie wartości (parametry, atrybuty)
-typu float i zwraca wynik  mnożenia tych dwóch liczb (zwraca typ float). */
+﻿Console.WriteLine(Powitanie("Anna")); 
+Console.WriteLine(Powitanie("Tomasz")); 
+Console.WriteLine(Powitanie("Anita")); 
 
-Console.WriteLine( Pomnoz(2, 3) );
-
-
-static float Pomnoz(float a, float b)
+static string Powitanie(string imie)
 {
-    return a * b;
+    return $"Witaj, {imie}!";
 }

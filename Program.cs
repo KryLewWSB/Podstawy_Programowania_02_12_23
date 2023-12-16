@@ -1,21 +1,11 @@
-﻿/* Przykład schemat blokowy  */
- 
-//Start programu
-//Podaj a:
-Console.WriteLine("Podaj wartość a: ");
-int a = Convert.ToInt16( Console.ReadLine() );
+﻿/* Przykład metody */
 
-//Podaj b:
-Console.WriteLine("Podaj wartość b: ");
-int b = Convert.ToInt16( Console.ReadLine() );
+Console.WriteLine( Dodaj(2, 2) );
+Console.WriteLine( Dodaj(3, 5) );
+Console.WriteLine( Dodaj(6, 1) );
 
-//Podaj c:
-Console.WriteLine("Podaj wartość c: ");
-int c = Convert.ToInt16( Console.ReadLine() );
 
-//Wyliczenie sumy:
-int suma = a + b + c;
-//Wypisanie sumy:
-Console.WriteLine($"Suma liczb: {a}, {b}, {c} to: {suma}");
-
-//STOP programu
+static int Dodaj(int a, int b)
+{
+    return a + b;
+}

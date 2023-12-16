@@ -1,9 +1,21 @@
-﻿/* 4. Utwórz tablicę liczb całkowitych (minimum 5 elementów)
- i użyj pętli foreach do wyświetlenia każdego elementu w konsoli. */
+﻿/* Przykład schemat blokowy  */
  
- int[] liczby = new int[]{1, 2, 3, 4, 5};
+//Start programu
+//Podaj a:
+Console.WriteLine("Podaj wartość a: ");
+int a = Convert.ToInt16( Console.ReadLine() );
 
- foreach (int liczba in liczby)
- {
-     Console.WriteLine(liczba);
- }
+//Podaj b:
+Console.WriteLine("Podaj wartość b: ");
+int b = Convert.ToInt16( Console.ReadLine() );
+
+//Podaj c:
+Console.WriteLine("Podaj wartość c: ");
+int c = Convert.ToInt16( Console.ReadLine() );
+
+//Wyliczenie sumy:
+int suma = a + b + c;
+//Wypisanie sumy:
+Console.WriteLine($"Suma liczb: {a}, {b}, {c} to: {suma}");
+
+//STOP programu
